@@ -62,7 +62,8 @@ public class ctrl_Player : MonoBehaviour
             isJumping = false;
         }
         //Mira Mouse
-        var delta = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
+
+        var delta = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position
         if(delta.x >= 0 && !verDerecha)
         {
             transform.localScale = new Vector3(1, 1, 1);
