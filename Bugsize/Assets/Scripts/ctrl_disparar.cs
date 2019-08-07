@@ -20,6 +20,7 @@ public class ctrl_disparar : MonoBehaviour
     void Update()
     {
         //Mirilla
+        //Modificacion1
         target = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, transform.position.z));
         mirilla.transform.position = new Vector2(target.x, target.y);
         //Rotacion
